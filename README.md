@@ -8,5 +8,7 @@ The News App is an Android application developed using Kotlin and Jetpack Compos
 - Search Articles: Users can search for specific news articles using keywords. The app fetches relevant articles based on the search query and presents them in a paginated list.
 
 - Save Articles: Users can save articles to read later. The saved articles are stored locally and can be accessed from the "Save" screen.
+
+[download apk](https://github.com/vishalsingh444/News-App/releases/download/apk/News.apk)
  
 ![News_app_gif_new](https://github.com/vishalsingh444/News-App/assets/123194054/ef1fc607-65ba-45d7-a70e-e12ab8530634)
