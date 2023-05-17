@@ -7,13 +7,13 @@ import androidx.room.PrimaryKey
     tableName = "articles"
 )
 data class Article(
-    @PrimaryKey(autoGenerate = true)
     var id: Int? = null,
     val author: String? = "unknown",
     val content: String? = "unknown",
     val description: String? = "unknown",
     val publishedAt: String? = "unknown",
     val source: Source? = Source(id = "unknown",name = "unknown"),
+    @PrimaryKey
     val title: String  = "unknown",
     val url: String? = "unknown",
     val urlToImage: String? = "unknown"

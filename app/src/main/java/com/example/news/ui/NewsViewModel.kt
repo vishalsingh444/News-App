@@ -21,7 +21,7 @@ class NewsViewModel @Inject constructor(
 ): ViewModel() {
 
 
-    val pagingArticle = newsRepository.getBreakingNews()
+    val pagingArticle = newsRepository.getBreakingNews().cachedIn(viewModelScope)
 
     val searchedArticle:MutableStateFlow<PagingData<Article>> = MutableStateFlow(PagingData.empty())
 

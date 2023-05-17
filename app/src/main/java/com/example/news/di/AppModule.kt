@@ -25,7 +25,9 @@ object AppModule {
             app,
             ArticleDatabase::class.java,
             ArticleDatabase.DATABASE_NAME
-        ).build()
+        )
+            .fallbackToDestructiveMigration()
+            .build()
     }
 
     @Provides
