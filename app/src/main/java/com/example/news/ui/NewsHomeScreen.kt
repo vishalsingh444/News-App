@@ -58,7 +58,7 @@ fun NewsHomeScreen(
         topBar = {
             androidx.compose.material3.TopAppBar(
                 title = {
-                    Text(text = "Trending", fontWeight = FontWeight.Bold, fontSize = 20.sp)
+                    Text(text = "Trending", fontWeight = FontWeight.Bold, fontSize = 24.sp)
                 }
             )
         }

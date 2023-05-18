@@ -1,9 +1,7 @@
 package com.example.news.ui
 
+import android.annotation.SuppressLint
 import androidx.activity.compose.BackHandler
-import androidx.compose.foundation.gestures.Orientation
-import androidx.compose.foundation.gestures.ScrollableState
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,7 +14,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -30,7 +27,9 @@ import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.news.R
 import com.example.news.model.Article
+import com.example.news.ui.components.browser_button.OpenInAppBrowserButton
 
+@SuppressLint("SuspiciousIndentation")
 @Composable
 fun DetailsScreen(
     article: Article,
@@ -42,7 +41,7 @@ fun DetailsScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp)
+            .padding(start = 16.dp, end = 16.dp, top = 16.dp, bottom = 55.dp)
             .verticalScroll(rememberScrollState(0))
     ) {
         AsyncImage(
@@ -60,6 +59,6 @@ fun DetailsScreen(
         Spacer(Modifier.height(16.dp))
         if(article.content!=null)
         Text(text = article.content, style = MaterialTheme.typography.bodyMedium)
-
+        OpenInAppBrowserButton(url = article.url?: "")
     }
 }
