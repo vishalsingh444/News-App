@@ -11,4 +11,13 @@ The News App is an Android application developed using Kotlin and Jetpack Compos
 
 [download apk](https://github.com/vishalsingh444/News-App/releases/download/apk/News.apk)
  
-![News_app_gif_new](https://github.com/vishalsingh444/News-App/assets/123194054/ef1fc607-65ba-45d7-a70e-e12ab8530634)
+![newsappgif1](https://github.com/vishalsingh444/News-App/assets/123194054/ad13d1d7-6ba3-47b5-8043-34d5bcfc016d)    ![newsappgif2](https://github.com/vishalsingh444/News-App/assets/123194054/232f9343-8e70-4d7f-9baf-8e60a4b130aa)    ![newsappgif3](https://github.com/vishalsingh444/News-App/assets/123194054/fe812aed-86eb-4d74-8d4b-9d11697355f2)
+
+
+
+
+
+
+
+
+
